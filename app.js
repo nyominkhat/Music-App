@@ -181,13 +181,13 @@ scrollRight.addEventListener("click", () => {
 });
 
 function playIcon() {
-  Array.from(document.querySelectorAll(".play")).forEach((e) => {
+  document.querySelectorAll(".play").forEach((e) => {
     e.classList.remove("bi-pause-circle");
     e.classList.add("bi-play-circle");
   });
 }
 
-Array.from(document.querySelectorAll(".play")).forEach((e, i) => {
+document.querySelectorAll(".play").forEach((e, i) => {
   e.addEventListener("click", (element) => {
     playIcon();
     music.src = tracks[i].trackId;

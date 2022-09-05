@@ -43,7 +43,10 @@ body {
 .main-container .aside-section {
   width: 20%;
   height: 75vh;
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-container .aside-section .accound {
@@ -110,8 +113,8 @@ body {
 }
 
 .main-container .aside-section .categories-container {
-  position: absolute;
-  bottom: 2rem;
+  /* position: absolute;
+  bottom: 2rem; */
   padding: 1rem;
   width: 100%;
 }
