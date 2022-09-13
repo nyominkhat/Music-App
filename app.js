@@ -159,7 +159,7 @@ function addSongItemstoUI(index) {
                          <i class="play bi bi-play-circle" id=${index}></i>
                       `;
 
-  itemsContainer.appendChild(songItem);
+  return itemsContainer.appendChild(songItem);
 }
 
 for (let i = 0; i < tracks.length; i++) {
